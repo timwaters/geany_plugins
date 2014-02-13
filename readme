@@ -1,0 +1,7 @@
+some geany plugins
+
+working towards a nice git integration
+
+gcc -c hello_world.c -fPIC `pkg-config --cflags geany` 
+gcc hello_world.o -o hello_world.so -shared `pkg-config --libs geany` 
+sudo cp hello_world.so /usr/lib/x86_64-linux-gnu/geany/
